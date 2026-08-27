@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | SolracBitcoin - Valladolid</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .contact-wrap{max-width:1000px;margin:0 auto;padding:20px 5% 50px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:25px}
+  .contact-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:18px;padding:25px}
+  .whats-btn{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    background:#25D366;color:#000;font-weight:900;
+    padding:16px;border-radius:12px;font-size:16px;margin:15px 0;transition:0.2s
+  }
+  .whats-btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+  .dato{display:flex;gap:12px;margin:18px 0;align-items:center}
+  .dato-icon{background:#222;width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+  .dato b{display:block;font-size:14px}
+  .dato span{font-size:13px;opacity:0.7}
+  .form input,.form textarea{
+    width:100%;background:#0f0f0f;border:1px solid #2a2a2a;
+    color:#fff;padding:13px;border-radius:10px;margin:8px 0;font-size:14px
+  }
+  .form textarea{min-height:110px;resize:none}
+  .form button{width:100%;margin-top:10px;border:none;cursor:pointer}
+  @media(max-width:800px){.contact-wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Solrac<span>Bitcoin</span></a>
+  <div class="menu">
+    <a href="proyectos.html">Proyectos</a>
+    <a href="como-comprar.html">Cómo comprar</a>
+    <a href="index.html" class="btn-nav">Inicio</a>
+  </div>
+</nav>
+
+<section class="hero" style="padding:50px 5% 20px">
+  <h1>¿Hablamos?</h1>
+  <p>Estoy en Valladolid, Yucatán. Respondo rápido por WhatsApp, de 9am a 9pm.</p>
+</section>
+
+<div class="contact-wrap">
+  
+  <div class="contact-card reveal">
+    <h3>Contacto directo</h3>
+    <p style="font-size:13px;opacity:0.7;margin:8px 0 15px">El método más rápido para comprar.</p>
+    
+    <!-- CAMBIA TU NUMERO AQUÍ -->
+    <a href="https://wa.me/5219851222435?text=Hola%20Solrac%2C%20vi%20tu%20pagina%20SolracBitcoin%20y%20me%20interesa%20un%20proyecto" target="_blank" class="whats-btn">
+      💬 WhatsApp Directo
+    </a>
+
+    <div class="dato">
+      <div class="dato-icon">📍</div>
+      <div><b>Valladolid, Yucatán, México</b><span>Entrega digital - sin envíos</span></div>
+    </div>
+    <div class="dato">
+      <div class="dato-icon">⚡</div>
+      <div><b>Pago en MXN con Bitcoin</b><span>Lightning y On-Chain</span></div>
+    </div>
+    <div class="dato">
+      <div class="dato-icon">⏱️</div>
+      <div><b>Respuesta en minutos</b><span>Lun - Dom 9am - 9pm</span></div>
+    </div>
+  </div>
+
+  <div class="contact-card reveal">
+    <h3>Déjame un mensaje</h3>
+    <div class="form">
+      <input type="text" placeholder="Tu nombre" id="nombre">
+      <input type="text" placeholder="Qué proyecto te interesa" id="proyecto">
+      <textarea placeholder="Hola Solrac, me interesa..." id="mensaje"></textarea>
+      <button class="btn-primary" onclick="enviarWA()">Enviar por WhatsApp</button>
+      <p style="font-size:11px;opacity:0.5;margin-top:12px;text-align:center">Este formulario te manda directo a mi WhatsApp, no guarda nada.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">Solrac<span>Bitcoin</span></div>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="terminos.html">Términos</a>
+      <a href="privacidad.html">Privacidad</a>
+    </div>
+    <div class="footer-pagos">₿ Bitcoin • ⚡ Lightning • MXN</div>
+    <div class="footer-copy">SolracBitcoin - Valladolid 2026</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+function enviarWA(){
+  let n = document.getElementById('nombre').value || 'Hola';
+  let p = document.getElementById('proyecto').value || 'un proyecto';
+  let m = document.getElementById('mensaje').value || 'Vi tu página y me interesa comprar.';
+  let texto = `Hola Solrac, soy ${n}. Me interesa ${p}. ${m}`;
+  let url = `https://wa.me/5219851222435?text=${encodeURIComponent(texto)}`;
+  window.open(url, '_blank');
+}
+</script>
+</body>
+</html>

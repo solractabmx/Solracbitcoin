@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo comprar | SolracBitcoin - Pago con Bitcoin</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .comprar-wrap{max-width:900px;margin:0 auto;padding:20px 5% 60px}
+  .pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin:30px 0}
+  .paso{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:16px;padding:20px;text-align:center}
+  .paso b{color:#f7931a}
+  .qr-box{background:#111;border:2px solid #f7931a;border-radius:20px;padding:22px;text-align:center;margin:20px 0}
+  .qr-box img{width:260px;max-width:100%;border-radius:12px;background:#fff;padding:8px;margin:15px auto;display:block}
+  .addr{background:#0a0a0a;border:1px solid #2a2a2a;border-radius:10px;padding:12px;font-size:11px;word-break:break-all;color:#aaa;margin:12px 0;font-family:monospace}
+  .btn-copy{background:#f7931a;color:#000;border:none;padding:10px 20px;border-radius:10px;font-weight:bold;cursor:pointer;width:100%}
+  .alerta{background:#1a1500;border:1px solid #f7931a;border-radius:12px;padding:14px;font-size:13px;margin-top:20px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Solrac<span>Bitcoin</span></a>
+  <div class="menu">
+    <a href="proyectos.html">Proyectos</a>
+    <a href="contacto.html" class="btn-nav">Contacto</a>
+  </div>
+</nav>
+
+<section class="hero" style="padding:40px 5% 10px">
+  <h1 class="reveal">Cómo comprar con Bitcoin</h1>
+  <p class="reveal">Fácil, privado y sin bancos. Solo necesitas Phoenix Wallet.</p>
+</section>
+
+<div class="comprar-wrap">
+
+  <div class="pasos reveal">
+    <div class="paso"><b>1.</b> Instala Phoenix Wallet en tu cel</div>
+    <div class="paso"><b>2.</b> Compra Bitcoin en tu exchange</div>
+    <div class="paso"><b>3.</b> Escanea mi QR y paga en MXN</div>
+  </div>
+
+  <!-- LIGHTNING - RECOMENDADO -->
+  <div class="qr-box reveal">
+    <h3 style="color:#f7931a">⚡ Opción 1: Lightning - RECOMENDADA</h3>
+    <p style="font-size:13px;opacity:0.7">Pago instantáneo, comisión $0. Llega en 2 segundos.</p>
+    <img src="img/qrligh.png" alt="QR Lightning Phoenix">
+    <div class="addr" id="addrLight">lno1pgqppmsrse80qf0aara4slvcjxrvu6j2rp5ftmjy4yntlsmsutpkvkt6878sypzlknwsv8g4nvzv67ndpyc9cg2pdk2a02qwly6y638vseazwlqgqgp8fwzapwdkhn8eqvypsgnmkk9l82lfmjw8uaad0s6s9tzrjf3wcusqxvszlhx83md2lvn9ehaf0alh6acaansrjkprhydu0tcykg202l2d0dt5570effdy90etkktredk9f6gfladq86d69yzc8mhr2a2n26c658znpvqcgr0pcmgygade2mls2lt54l0uqqetp2jtqkxxf3stcfj84cj7r9hzlnsl3ctr0asytyukzu77cm0kaftsvqs5smmn5xav0uzkrc7cgx6l3xxs</div>
+    <button class="btn-copy" onclick="navigator.clipboard.writeText(document.getElementById('addrLight').innerText);this.innerText='¡Copiado!'">Copiar dirección Lightning</button>
+  </div>
+
+  <!-- ON-CHAIN -->
+  <div class="qr-box reveal" style="border-color:#2a2a2a">
+    <h3>₿ Opción 2: Bitcoin On-Chain</h3>
+    <p style="font-size:13px;opacity:0.7">Si tu app no tiene Lightning. Tarda ~20 min.</p>
+    <img src="img/qrbtc.png" alt="QR On-Chain Bitcoin">
+    <div class="addr" id="addrBtc">bc1pz524v3rlv086g6g8ujd0mwdlzyk0ucj8xv6kd29vljydgxz2h20sr9kcvz</div>
+    <button class="btn-copy" style="background:#2a2a2a;color:#fff" onclick="navigator.clipboard.writeText(document.getElementById('addrBtc').innerText);this.innerText='¡Copiado!'">Copiar dirección On-Chain</button>
+  </div>
+
+  <div class="alerta reveal">
+    <b style="color:#f7931a">Importante:</b> Después de pagar, envíame el comprobante por WhatsApp con el nombre del proyecto que quieres. Te entrego en menos de 2 horas. Pago en MXN al tipo de cambio del momento del pago.
+  </div>
+
+  <div style="text-align:center;margin-top:30px" class="reveal">
+    <a href="https://wa.me/5219851222435?text=Hola%20Solrac%20ya%20pagué%20con%20Bitcoin" class="btn-primary">Ya pagué, enviar comprobante</a>
+    <p style="font-size:11px;opacity:0.5;margin-top:10px">Todo los articulos garantizados</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">Solrac<span>Bitcoin</span></div>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="terminos.html">Términos</a>
+      <a href="privacidad.html">Privacidad</a>
+    </div>
+    <div class="footer-pagos">₿ Pago único con Phoenix • Sin suscripciones</div>
+    <div class="footer-copy">SolracBitcoin - Valladolid, Yucatán - 2026</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
