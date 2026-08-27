@@ -1,20 +1,95 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bienvenido</title>
-    <style>
-      body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:linear-gradient(135deg,#0f172a,#1e293b); color:#e6eef8 }
-      .card { background:rgba(255,255,255,0.04); padding:32px; border-radius:12px; box-shadow:0 6px 18px rgba(2,6,23,0.6); text-align:center }
-      h1 { margin:0 0 8px 0; font-size:28px }
-      p { margin:0; opacity:0.85 }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>Bienvenidos a mi página</h1>
-      <p>Repositorio: solractabmx/Solracbitcoin</p>
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolracBitcoin | Proyectos Digitales en Valladolid - Pago con Bitcoin</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo" style="display:flex;align-items:center;gap:10px">
+      <img src="img/favicon.png" alt="SolracBitcoin" style="width:32px;height:32px;border-radius:50%">
+      Solrac<span>Bitcoin</span>
+    </a>
+    <div class="menu">
+      <a href="proyectos.html">Proyectos</a>
+      <a href="como-comprar.html">Cómo comprar</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="contacto.html" class="btn-nav">Contacto</a>
     </div>
-  </body>
+  </nav>
+
+  <div class="hero">
+    <h1 class="reveal">Proyectos digitales listos para monetizar</h1>
+    <p class="reveal">Sitios web y proyectos creados desde cero en Valladolid.<br>Paga en pesos con Bitcoin.</p>
+    
+    <div class="hero-btns reveal">
+      <a href="proyectos.html" class="btn-primary">Ver proyectos</a>
+      <a href="sobre-mi.html" class="btn-sec">Sobre el creador</a>
+    </div>
+
+    <div class="reveal" style="margin-top:28px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap; font-size:12px;">
+      <span style="background:#1a1a1a;border:1px solid #2a2a2a;padding:6px 14px;border-radius:20px;">₿ Bitcoin On-Chain</span>
+      <span style="background:#1a1a1a;border:1px solid #f7931a;padding:6px 14px;border-radius:20px;color:#f7931a;">⚡ Lightning Instantáneo</span>
+    </div>
+  </div>
+</header>
+
+<section class="proyectos-preview">
+  <h2>Últimos proyectos</h2>
+  <div class="grid">
+    <div class="card reveal">
+      <h3>Sitio Web Nicho Viajes</h3>
+      <p>Dominio + diseño + 10 artículos. Listo para Adsense.</p>
+      <span class="precio">$2,500 MXN</span>
+    </div>
+    <div class="card reveal">
+      <h3>Proyecto Página Trabajada</h3>
+      <p>3 meses de trabajo, contenido orgánico.</p>
+      <span class="precio">$1,800 MXN</span>
+    </div>
+    <div class="card reveal">
+      <h3>Pack Fotos Premium</h3>
+      <p>100 fotos 4K para tu agencia.</p>
+      <span class="precio">$350 MXN</span>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:25px">
+    <a href="proyectos.html" style="color:#f7931a;font-size:14px;text-decoration:none">Ver todos los proyectos →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo" style="display:flex;align-items:center;justify-content:center;gap:10px">
+      <img src="img/favicon.png" alt="logo" style="width:28px;height:28px;border-radius:50%">
+      Solrac<span>Bitcoin</span>
+    </div>
+    
+    <div class="footer-links">
+      <a href="proyectos.html">Proyectos</a>
+      <a href="como-comprar.html">Cómo comprar</a>
+      <a href="terminos.html">Términos</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="footer-pagos">
+      ₿ Aceptamos Bitcoin On-Chain • ⚡ Lightning • Pago en MXN
+    </div>
+
+    <div class="footer-copy">
+      SolracBitcoin - Valladolid, Yucatán - 2026<br>
+      Hecho con ₿ desde México • bc1pz5...kcvz
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
 </html>
